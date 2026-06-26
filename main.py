@@ -13,7 +13,7 @@ def run_flask():
     app.run(host='0.0.0.0', port=10000)
 
 # Tokeningiz
-TOKEN = "8877479664:AAFLQjuDtLcKvrWofQt2LftuGJMabV46hig"
+TOKEN = "8877479664:AAHUWLMoKyRHoOTzhcTWYfGvtSnpxU7PANU"
 
 if __name__ == '__main__':
     # Flaskni fonda ishga tushirish
