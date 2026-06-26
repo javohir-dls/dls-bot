@@ -22,5 +22,6 @@ if __name__ == '__main__':
     # Botingizni ishga tushirish
     application = ApplicationBuilder().token(TOKEN).build()
     print("Bot ishga tushdi!")
-    application.run_polling()
+    aapplication.run_polling(drop_pending_updates=True)
+
 
