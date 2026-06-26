@@ -1,11 +1,13 @@
-import logging
-from telegram.ext import ApplicationBuilder
+from flask import Flask
+import threading
 
-# Tokeningizni shu yerga yozing
-TOKEN = "8877479664:AAFLQjuDtLcKvrWofQt2LftuGJMabV46hig"
+app = Flask(__name__)
 
-if __name__ == '__main__':
-    application = ApplicationBuilder().token(TOKEN).build()
-    print("Bot ishga tushdi!")
-    application.run_polling()
+@app.route('/')
+def home():
+    return "Bot ishlayapti!"
 
+def run():
+    app.run(host='0.0.0.0', port=10000)
+
+threading.Thread(target=run).start()
